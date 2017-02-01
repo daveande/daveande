@@ -1,0 +1,73 @@
+/*
+ * Posts
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ */
+
+.post {
+  padding: 40px 40px 80px;
+  border: 1px solid #eee;
+  background: $white;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+  margin-bottom: 4em;
+
+  //h1, h2, h3, h4, h5, h6 {
+  //  font-weight: 700;
+  //}
+  p {
+    margin-top: 5px;
+  }
+
+  @media (min-width: 38rem) {
+    h2 { 
+      margin: 2em 0 1em 0;
+    }
+    h3, h4, h5, h6 {
+      margin: 2em 0 1em 0;
+    }
+  }
+}
+
+/* Blog post or page title */
+.post-title,
+.post-title a {
+  color: $theme-color;
+}
+.post-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: inline-block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: $post-date-color;
+}
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}
+

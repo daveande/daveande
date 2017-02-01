@@ -1,0 +1,43 @@
+/* Colors 
+ * See scss/base/lanyon.scss Themes section
+ */
+$red:      #ac4142;
+$orange:   #d28445;
+$yellow:   #f4bf75;
+$green:    #90a959;
+$cyan:     #75b5aa;
+$blue:     #6a9fb5;
+$magenta:  #aa759f;
+$brown:    #8f5536;
+$default:  #505050;
+
+$white:      #fff;
+$lightgrey:  #eee;
+$black:      #000;
+
+$theme-color: $blue;
+$theme-color-dark: darken($theme-color, 10%);
+$post-date-color: #9a9a9a;
+$title-color: #313131;
+$masthead-title-small-color: #c0c0c0;
+$text-color: #636363;
+$link-color: #268bd2;
+$bg-color: #f5f5f5;
+
+/* Layout */
+$reverse-layout: true;
+$overlay-sidebar: false;
+
+/* Font stack */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+$font-family: 'Lato', Helvetica, sans-serif;
+$font-font-awesome: FontAwesome;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 700;
+$font-height: 1.5;
+
+
+// colors
+$dark-grey: #333447;
+$dark-gray: #333447; // for the Americans
