@@ -4,25 +4,12 @@
   {% include head.html %}
 
   <body>
-    <div class="masthead">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h3 class="masthead-title">
-              <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-              <small>{{ site.tagline }}</small>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-9">
-          {{ content }}
-        </div>
-        <div class="col-3">
-          <div class="sidebar" id="sidebar">
+    {% include header.html %}
+    <section class="container">
+      <section class="content">
+        {{ content }}
+      </section>
+      <!--<section id="sidebar">
             <div class="links">
               <ul>
                 {% comment %}
@@ -40,10 +27,8 @@
                 {% endfor %}
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+            </section>--!>
+    </section>
+    {% include footer.html %}
   </body>
 </html>

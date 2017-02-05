@@ -3,24 +3,23 @@ layout: page
 title: Tags
 ---
 {% assign sorted_tags = (site.tags | sort:0) %}
-<div class="tags-expo">
-  <div class="tags-expo-list">
+<div class="post-tags">
     {% for tag in sorted_tags %}
     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
     {% endfor %}
-  </div>
-  <hr/>
-  {% for tag in sorted_tags %}
-    <section class="archive_list">
-      <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-      {% for post in tag[1] %}
-        <div class="post_title">
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
-          <span class="date">{{ post.date | date: "%-d %b, %Y" }}</span>
-        </div>
-      {% endfor %}
-    </section>
-    <hr/>
-  {% endfor %}
 </div>
+{% for tag in sorted_tags %}
+  <section class="archive-list">
+    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    {% for post in tag[1] %}
+      <div class="post">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+        <span class="post-date">{{ post.date | date: "%-d %b, %Y" }}</span>
+      </div>
+    {% endfor %}
+  </section>
+  {% unless tag == sorted_tags.last %}
+    <hr/>
+  {% endunless %}
+{% endfor %}
 

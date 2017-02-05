@@ -6,6 +6,7 @@ url:                 http://daveande.com
 paginate:            20
 paginate_path:       '/blog/page:num'
 permalink:           '/blog/:title/'
+baseurl:             ''
 # Where are tags and categories displayed
 tag_page: '/blog/tags'
 category_page: '/blog/categories'
@@ -21,15 +22,14 @@ sass:
   sass_dir: _scss
 
 gems:
-  - jekyll-archives
   - jekyll-paginate
+#- jekyll-archives
 
-jekyll-archives:
-  enabled: ['year', 'tags']
-  layouts: 
-    year: jekyll-archives
-    tag: jekyll-archives
-  permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-
+#jekyll-archives:
+#  enabled: ['year', 'tags']
+#  layouts: 
+#    year: jekyll-archives
+#    tag: jekyll-archives
+#  permalinks:
+#    year: '/blog/:year/'
+#    tag: '/blog/tag/:name/'

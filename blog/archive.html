@@ -6,7 +6,7 @@ permalink: /blog/archive
 
 <div>
 
-  <section class="archive_list">
+  <section class="archive-list">
     {% assign sorted_posts = (site.posts | sort: "date") %}
     {% for post in sorted_posts reversed %}
       {% assign currentdate = post.date | date: "%Y" %}
@@ -15,9 +15,9 @@ permalink: /blog/archive
         <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
         {% assign date = currentdate %}
       {% endif %}
-      <div class="post_title">
+      <div class="post">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
-        <span class="date">{{ post.date | date: "%-d %b, %Y" }}</span>
+        <span class="post-date">{{ post.date | date: "%-d %b, %Y" }}</span>
       </div>
     {% endfor %}
   </section>

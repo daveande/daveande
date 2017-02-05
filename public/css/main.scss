@@ -1,19 +1,34 @@
 ---
 ---
 
-@import 'config';
+//@import 'config';
+//
+////@import 'base/poole';
+//@import 'base-custom/global';
+//@import 'base-custom/simple-grid';
+//@import 'base-custom/syntax';
+////@import 'base/lanyon';
+//
+//@import 'component/sidebar';
+//@import 'component/post';
+//@import 'component/page';
+//@import 'component/tag';
+//@import 'component/pagination';
+//@import 'component/code';
+//@import 'component/message';
 
-//@import 'base/poole';
-@import 'base/global';
-@import 'base/simple-grid';
-@import 'base/syntax';
-//@import 'base/lanyon';
+@import 'reset';
+@import 'bourbon/bourbon';
 
-@import 'component/sidebar';
-@import 'component/post';
-@import 'component/page';
-@import 'component/tag';
-@import 'component/pagination';
-@import 'component/code';
-@import 'component/message';
+//$visual-grid: true;
+//$visual-grid-color: red;
 
+// Overrides Neat's default
+$max-width: 1000px;
+
+//Breakpoints
+$mobile: new-breakpoint(max-width 500px 4);
+
+@import 'neat/neat';
+@import 'base/base';
+@import 'main';
