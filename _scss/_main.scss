@@ -1,5 +1,8 @@
 body {
   background: $white;
+  @include media($mobile) {
+    overflow-x: hidden;
+  }
 }
 
 h1.md {

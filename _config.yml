@@ -12,6 +12,7 @@ tag_page: '/blog/tags'
 category_page: '/blog/categories'
 
 google_analytics: 'UA-11077959-6'
+disqus_shortname: 'daveande'
 
 # About/contact
 author:
